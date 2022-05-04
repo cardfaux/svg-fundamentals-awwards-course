@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+
+body {
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+svg {
+  display: block;
+  max-width: 100vw;
+}
+
+#container {
+  max-width: 100vw;
+  width: 600px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+#header {
+  margin-bottom: 3rem;
+}
+
+#chart-grid {
+  /* width: 100vw;
+  display: flex;
+  flex-wrap: wrap; */
+}
+
+.inline-chart-holder {
+  margin: 0 2rem 2rem 0;
+  display: inline-block;
+  /* width: 25%; */
+}
+
+.inline-chart {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#download-btn {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 16px;
+  border: none;
+  background: #d35400;
+  color: white;
+}
+
+#spinner {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  border-radius: 100%;  
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+  transition: opacity 0.2s ease;
+}
+
+#spinner.hidden {
+  opacity: 0;
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}

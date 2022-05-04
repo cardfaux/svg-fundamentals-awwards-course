@@ -1,0 +1,36 @@
+{
+  "name": "svg-fundamentals-awwwards-course",
+  "version": "0.0.1",
+  "description": "Repo containing all examples and source code for the SVG Fundamentals AWWWARDS course",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "http-server src -p 4001",
+    "start": "run-p start:frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnikoloff/svg-fundamentals-awwwards-course.git"
+  },
+  "keywords": [
+    "svg",
+    "rendering",
+    "vector",
+    "graphics"
+  ],
+  "author": "Georgi Nikolov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnikoloff/svg-fundamentals-awwwards-course/issues"
+  },
+  "homepage": "https://github.com/gnikoloff/svg-fundamentals-awwwards-course#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "simplex-noise": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5"
+  }
+}
